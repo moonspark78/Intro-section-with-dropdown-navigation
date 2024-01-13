@@ -8,8 +8,9 @@
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -24,26 +25,115 @@
         <div class="nav-logo">
           <img src="/images/logo.svg" alt="">
         </div>
+        <ul class="nav-links">
+          <li>Features
+            <img class="arrow" src="./images/icon-arrow-down.svg" alt="">
+            <div class="sub-menu one">
+                <p class="sub-links">
+                  <img src="./images/icon-todo.svg" alt="">
+                  Todo List
+                </p>
+                <p class="sub-links">
+                  <img src="./images/icon-calendar.svg" alt="">
+                  Calendar
+                </p>
+                <p class="sub-links">
+                  <img src="./images/icon-reminders.svg" alt="">
+                  Remnider
+                </p>
+                <p class="sub-links">
+                  <img src="./images/icon-planning.svg" alt="">
+                  Planing
+                </p>
+            </div>
+          </li>
+          <li>Company
+            <img class="arrow" src="./images/icon-arrow-down.svg" alt="">
+            <div class="sub-menu two">
+              <p class="sub-links">
+                History
+              </p>
+              <p class="sub-links">
+                Our team
+              </p>
+              <p class="sub-links">
+                Blog
+              </p>
+            </div>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+      </div>
+      <div class="mobile-menu-btn">
+        <img src="./images/icon-menu.svg" alt="">
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-links">
+          <li>
+            <p>
+              Features <img class="arrow" src="./images/icon-arrow-down.svg" alt="">
+            </p>
+            <div class="mobile-sub">
+              <p class="sub-links">
+                <img src="./images/icon-todo.svg" alt="">
+                Todo List
+              </p>
+              <p class="sub-links">
+                <img src="./images/icon-calendar.svg" alt="">
+                Calendar
+              </p>
+              <p class="sub-links">
+                <img src="./images/icon-reminders.svg" alt="">
+                Remnider
+              </p>
+              <p class="sub-links">
+                <img src="./images/icon-planning.svg" alt="">
+                Planing
+              </p>
+            </div>
+          </li>
+          <li>Company
+            <img class="arrow" src="./images/icon-arrow-down.svg" alt="">
+            <div class="mobile-sub">
+              <p class="sub-links">
+                History
+              </p>
+              <p class="sub-links">
+                Our team
+              </p>
+              <p class="sub-links">
+                Blog
+              </p>
+            </div>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <button class="transparent-btn">Login</button>
+        <button class="outlined-btn">Register</button>
       </div>
     </div>
-
   </nav>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
+  <main>
+    <div class="main-container">
+      <div class="main-left">
+        <h1 class="main-heading">Make <br> remote work</h1>
+        <p class="main-content"> Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+          <button class="primary-btn"> Learn more</button>
+          <div class="logoes">
+            <img src="./images/client-databiz.svg" alt="">
+            <img src="./images/client-audiophile.svg" alt="">
+            <img src="./images/client-meet.svg" alt="">
+            <img src="./images/client-maker.svg" alt="">
+          </div>
+      </div>
+    </div>
+  </main>
+ 
 
 </body>
 </html>
