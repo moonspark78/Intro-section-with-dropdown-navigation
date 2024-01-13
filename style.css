@@ -22,7 +22,122 @@ img{
 
 
 /* Buttons */
+.transparent-btn,
+.outlined-btn{
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    color: var(--Medium-Gray);
+    cursor: pointer;
+    background-color: transparent;
+}
 
+.transparent-btn{
+    border: none;
+}
+.transparent-btn:hover{
+    color: var(--Almost-Black);
+    font-weight: 700;
+}
+
+
+.outlined-btn{  
+    border: solid 1px var(--Almost-Black);
+}
+.outlined-btn:hover{  
+    color: var(--Almost-Black);
+    font-weight: 700;
+}
+.primary-btn{
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.primary-btn:hover{
+    background-color: var(--Almost-White);
+    border: solid 1px var(--Almost-Black);
+    color: var(--Almost-Black);
+    font-weight: 700;
+}
 /* Navbar */
+nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.nav-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-inline: 3rem;
+}
 
-/* Main Css */
+.nav-left{
+    display: flex;
+    align-items: flex;
+}
+
+.nav-links{
+    display: flex;
+    margin-left: 4rem;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-links li{
+    cursor: pointer;
+    color: var(--Medium-Gray);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    position: relative;
+    user-select: none;
+}
+
+.mobile-menu-btn{
+    display: none;
+}
+.sub-menu{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+.sub-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    gap: 1rem;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .one {
+    bottom: -170px;
+    right: 0;
+  }
+  .two {
+    bottom: -136px;
+  }
+  .sub-menu .sub-link {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    gap: 0.5rem;
+  }
+  .active .arrow {
+    transform: rotate(180deg);
+    transition: 0.2s;
+  }
+  .active-menu {
+    display: flex !important;
+  }
+
+/* Mai Css */
